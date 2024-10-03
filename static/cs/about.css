@@ -1,0 +1,107 @@
+.card-title {
+  color: #fcf5f5; /* Màu chữ trắng */
+  font-size: 2.5rem; /* Kích thước chữ lớn */
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-top: 30px; /* Khoảng cách trên */
+  margin-bottom: 40px; /* Khoảng cách dưới */
+  font-weight: bold; /* Làm đậm chữ */
+  text-transform: uppercase; /* Chữ hoa */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+}
+
+.card-title strong {
+  color: #000000; /* Đặt màu chữ thành đen */
+}
+
+/* General Section Styles */
+.features-without-image {
+  margin-bottom: 30px;
+}
+
+.item-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.num {
+  color: #007bff; /* Primary blue color */
+  font-size: 3rem;
+}
+
+.card-title {
+  color: #343a40;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .item-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .num {
+    font-size: 2.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Optional: Styling the second section */
+#features-25-up0O8nOkok {
+  background-color: #e9ecef; /* Slightly darker background */
+  padding: 50px 0;
+}
+
+#features-25-up0O8nOkok .card-box {
+  border-left: 3px solid #007bff; /* Adding a blue left border */
+  padding-left: 15px;
+}
+
+#features-25-up0O8nOkok .card-title {
+  color: #495057; /* Darker text */
+}
+
+#features-25-up0O8nOkok .card-text {
+  color: #6c757d; /* Muted text */
+}
+/* Ensure equal height for all cards */
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Full height for equalizing */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Styling the second section */
+#features-25-up0O8nOkok .item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Equal height for all feature cards */
+}

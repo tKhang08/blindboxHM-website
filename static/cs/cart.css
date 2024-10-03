@@ -1,0 +1,60 @@
+/*fix 1 ti */
+.form-control {
+  padding: 0 !important; /* Bỏ padding với độ ưu tiên cao */
+  border: 9px solid transparent !important;
+}
+
+.for body {
+  padding-top: 100px; /* Adjust this value based on the height of your navbar */
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the cart horizontally */
+  padding-top: 50px; /* Optional extra space below the navbar */
+}
+body {
+  padding-top: 50px;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cart-table {
+  width: 100%;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.cart-summary {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  float: right;
+  width: 40%;
+}
+
+.cart-summary p {
+  margin-bottom: 10px;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.2rem;
+  width: 100%;
+}

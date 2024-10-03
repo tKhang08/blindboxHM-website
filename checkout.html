@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang thanh toán</title>
+    <link rel="stylesheet" href="static\cs\checkout.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="checkout-form">
+        <h2>Thông tin thanh toán</h2>
+
+        <label for="first-name">Tên *</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Họ *</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="country">Country / Region *</label>
+        <input type="text" id="country" name="country" required />
+
+        <label for="address">Địa chỉ *</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="zip">Mã bưu điện (tùy chọn)</label>
+        <input type="text" id="zip" name="zip" />
+
+        <label for="city">Tỉnh / Thành phố *</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="phone">Số điện thoại *</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="email">Địa chỉ email *</label>
+        <input type="email" id="email" name="email" required />
+        <!-- Dùng để hiển thị lỗi. -->
+        <div id="card-errors" role="alert"></div>
+      </form>
+
+      <div class="order-summary">
+        <h3>Phương Thức Thanh Toán</h3>
+        <label>
+          <input
+            type="radio"
+            name="payment"
+            value="cash-on-delivery"
+            checked
+            onclick="toggleBankAccount()"
+          />
+          Trả tiền mặt khi nhận hàng
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="payment"
+            value="bank-transfer"
+            onclick="toggleBankAccount()"
+          />
+          Chuyển khoản ngân hàng
+        </label>
+        <p>
+          Thực hiện thanh toán vào ngay tài khoản ngân hàng của chúng tôi. Đơn
+          hàng sẽ được giao sau khi tiền đã chuyển.
+        </p>
+
+        <div id="bank-account-container" style="display: none">
+          <label for="bank-account">Tài khoản ngân hàng *</label>
+          <input
+            type="text"
+            id="bank-account"
+            name="bank-account"
+            placeholder="Nhập số tài khoản ngân hàng"
+          />
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" class="btn btn-order">Đặt hàng</button>
+          <button
+            class="btn btn-home"
+            onclick="window.location.href='index.html'"
+          >
+            Home
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="static\js\checkout.js"></script>
+  </body>
+</html>

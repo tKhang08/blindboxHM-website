@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giỏ Hàng Của Bạn</title>
+
+  <!-- Thêm các tệp CSS từ index.html -->
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="assets/dropdown/css/style.css" />
+  <link rel="stylesheet" href="assets/theme/css/style.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap&display=swap" />
+  </noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=fC4PTh" />
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=fC4PTh" type="text/css" />
+  <link rel="stylesheet" href="static\cs\cart.css" type="text/css" />
+</head>
+
+<body>
+  <!-- Thanh điều hướng từ index.html -->
+  <section data-bs-version="5.1" class="menu menu2 cid-up0O8nMaWx" once="menu" id="menu-5-up0O8nMaWx">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand">
+          <!--logo-->
+          <span class="navbar-logo">
+            <a href="index.html">
+              <img src="assets\images\img_01\logo_01.png" alt="LOGO" style="height: 4.3rem" />
+            </a>
+          </span>
+          <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html">blindbox
+              HM<br /></a></span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+          data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+            <li class="nav-item">
+              <a class="nav-link link text-black text-primary display-4" href="index.html"><span
+                  class="mobi-mbri mobi-mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link link text-black dropdown-toggle display-4" href="sanpham.html"
+                data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                aria-expanded="false"><span
+                  class="mobi-mbri mobi-mbri-cart-full mbr-iconfont mbr-iconfont-btn"></span>Shop</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-800">
+                <a class="text-black dropdown-item display-4" href="sanpham.html">ALL PRODUCT</a><a
+                  class="text-black show dropdown-item display-4" href="sanpham.html">TRENDY ITEM</a><a
+                  class="text-black show dropdown-item display-4" href="sanpham.html">NEW ITEM</a><a
+                  class="text-black show dropdown-item display-4" href="sanpham.html">SPECIAL ITEM</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span
+                  class="socicon socicon-angieslist mbr-iconfont mbr-iconfont-btn"></span>Blogs</a>
+              <div class="dropdown-menu">
+                <a class="text-black dropdown-item display-4" href="#">Hoodies: The Ultimate Comfort</a><a
+                  class="text-black show dropdown-item display-4" href="#">Top 5 Must-Have Items</a><a
+                  class="text-black show dropdown-item display-4" href="#">Accessorize Like a Pro</a><a
+                  class="text-black show dropdown-item display-4" href="#">Sneak Peek: Fall Collection</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link text-black text-primary display-4" href="about.html"><span
+                  class="mobi-mbri mobi-mbri-preview mbr-iconfont mbr-iconfont-btn"></span>About us</a>
+            </li>
+          </ul>
+          <div class="icons-menu">
+            <a class="iconfont-wrapper" href="dangnhap.html">
+              <span class="p-2 mbr-iconfont mobi-mbri-user-2 mobi-mbri"></span>
+            </a>
+            <a class="iconfont-wrapper" href="cart.html">
+              <span class="p-2 mbr-iconfont mobi-mbri-shopping-cart mobi-mbri"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--bảng hóa đơn-->
+  <div class="cart-container">
+    <h2 class="text-center"></h2>
+    <table class="cart-table table-bordered">
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Product</th>
+          <th>Cost</th>
+          <th>Count</th>
+          <th>Total</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Sản phẩm sẽ được thêm vào đây -->
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <p>Tạm tính: $<span id="subtotal">0.00</span></p>
+      <!-- Hiển thị phí giao hàng -->
+      <p>Giao hàng: $<span id="shipping-fee">30.00</span></p>
+      <!-- Thêm phần nhập mã giảm giá -->
+      <div class="discount-code">
+        <label for="discount-code-input">Nhập mã giảm giá:</label>
+        <input type="text" id="discount-code-input" class="form-control" placeholder="Mã giảm giá" />
+        <button id="apply-discount-btn" class="btn btn-primary">
+          Áp dụng
+        </button>
+      </div>
+      <p>
+        Tổng:
+        <span class="total-price">$<span id="total-price">0.00</span></span>
+      </p>
+      <button id="checkout-btn" class="btn checkout-btn">
+        Tiến Hành Thanh Toán
+      </button>
+    </div>
+  </div>
+
+  <!-- Thêm các tệp JS từ index.html -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/parallax/jarallax.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/scrollgallery/scroll-gallery.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="static\js\cart.js"></script>
+</body>
+
+</html>

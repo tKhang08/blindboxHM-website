@@ -1,0 +1,60 @@
+.cart-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the cart horizontally */
+  padding-top: 50px; /* Optional extra space below the navbar */
+}
+body {
+  padding-top: 50px;
+}
+/* H1 LIST*/
+h1.text-center {
+  font-size: 48px; /* Kích thước chữ */
+  font-weight: bold; /* Đậm chữ */
+  color: #e74c3c; /* Màu chữ */
+  text-align: center; /* Canh giữa */
+  text-transform: uppercase; /* Chuyển chữ thường thành chữ in hoa */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+  margin-top: 20px; /* Khoảng cách phía trên */
+  margin-bottom: 30px; /* Khoảng cách phía dưới */
+  background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Gradient nền */
+  -webkit-background-clip: text; /* Clip nền cho chữ */
+  color: transparent; /* Màu chữ trong suốt, chỉ hiển thị gradient */
+}
+/*căn chỉnh ảnh cho đều */
+.card-img-top {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+  height: 200px; /* Đặt chiều cao cố định */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+}
+/*quick view*/
+.card {
+  position: relative; /* Để định vị nhanh nút trong card */
+}
+
+.quick-view {
+  position: absolute; /* Định vị tương đối với phần tử cha */
+  top: 10px; /* Cách từ trên xuống */
+  right: 10px; /* Cách từ bên phải vào */
+  background-color: #9ea79e; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 5px; /* Padding cho hình tròn */
+  border-radius: 50%; /* Hình tròn */
+  font-size: 14px; /* Kích thước font */
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển động */
+}
+
+.quick-view:hover {
+  background-color: #010601; /* Màu nền khi hover */
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+.quick-view i {
+  font-size: 16px; /* Kích thước icon */
+}

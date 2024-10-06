@@ -31,17 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const cartItemRow = document.createElement("tr");
       cartItemRow.innerHTML = `
-    <td><img src="${product.image}" alt="${
-        product.name
-      }" style="width: 50px; height: 50px;" /></td>
+    <td><img src="${product.image}" alt="${product.name
+        }" style="width: 50px; height: 50px;" /></td>
     <td>${product.name}</td>
-    <td>$${productPriceValue}</td>
-    <td><input type="number" value="${
-      product.quantity
-    }" min="1" class="form-control quantity" style="width: 60px;" data-index="${index}" /></td>
-    <td>$<span class="item-total">${(product.quantity * product.price).toFixed(
-      2
-    )}</span></td>
+    <td>${productPriceValue}đ</td>
+    <td><input type="number" value="${product.quantity
+        }" min="1" class="form-control quantity" style="width: 60px;" data-index="${index}" /></td>
+    <td><span class="item-total">${(product.quantity * product.price).toFixed(
+          2
+        )}</span>đ</td>
     <td><button class="btn btn-danger remove-item" data-index="${index}">Xóa</button></td>
   `;
       cartItemsContainer.appendChild(cartItemRow);
